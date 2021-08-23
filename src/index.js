@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom";
-//import PrimeraApp from "./PrimeraApp";
 import CounterApp from "./CounterApp";
+//import PrimeraApp from "./PrimeraApp";
+
 import "./index.css";
 
 //console.log("hola mundo");
@@ -10,7 +11,8 @@ import "./index.css";
 const divRoot = document.querySelector("#app");
 
 //ReactDOM.render(<PrimeraApp saludo="hola ,soy GOKU" />, divRoot);
-ReactDOM.render(<CounterApp value="soy leyenda" />, divRoot);
 
+// RENDER == ENVIA ESTO
+ReactDOM.render(<CounterApp value={10} />, divRoot);
 // console.log(saludo);
 // console.log(divRoot);
